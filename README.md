@@ -33,24 +33,23 @@ bash
 
 #### Пример использования
 
-     python
-     import os
+   
+    import os
 
-     # Генерация 256-битного ключа для AES (32 байта)
-     aes_key = os.urandom(32)
+     
+    aes_key = os.urandom(32)
 
-     # Создаем двух пользователей с начальным балансом
-     alice = User('Alice', 1000, aes_key)
-     bob = User('Bob', 500, aes_key)
+    
+    Shokh = User('Alice', 1000, aes_key)
+    Maks = User('Bob', 500, aes_key)
 
-    # Пополняем баланс Alice и делаем перевод Bob
-     alice.deposit(200)
-     alice.withdraw(150)
-     alice.transfer(300, bob)
+    
+    shokh.deposit(200)
+    shokh.withdraw(150)
+    shokh.transfer(300, bob)
 
-    # Печать истории транзакций каждого пользователя
-    alice.print_transaction_history()
-    bob.print_transaction_history()
+    shokh.print_transaction_history()
+    Maks.print_transaction_history()
 
     # Печать текущего состояния блокчейна
     blockchain.display_chain()
