@@ -40,8 +40,8 @@ bash
     aes_key = os.urandom(32)
 
     
-    Shokh = User('Alice', 1000, aes_key)
-    Maks = User('Bob', 500, aes_key)
+    Shokh = User('Shokh', 1000, aes_key)
+    Maks = User('Maks', 500, aes_key)
 
     
     shokh.deposit(200)
