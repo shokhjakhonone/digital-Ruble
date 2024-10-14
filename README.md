@@ -46,7 +46,7 @@ bash
     
     shokh.deposit(200)
     shokh.withdraw(150)
-    shokh.transfer(300, bob)
+    shokh.transfer(300, Maks)
 
     shokh.print_transaction_history()
     Maks.print_transaction_history()
